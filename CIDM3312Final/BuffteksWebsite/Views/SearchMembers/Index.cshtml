@@ -1,0 +1,11 @@
+﻿@model Member
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Buffteks Website</h1>
+<p>Search for a member inside of a project</p>
+<form asp-controller="Search" asp-action="MemberResults" method="POST">
+<input type="text" placeholder="Search.." asp-for="@Model.FirstName">   
+<input type="submit" value="Submit">
+<br>
+</form>
